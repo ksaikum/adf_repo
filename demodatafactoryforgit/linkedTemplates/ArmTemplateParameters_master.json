@@ -5,6 +5,15 @@
 		"factoryName": {
 			"value": "demodatafactoryforgit"
 		},
+		"adls_gen2_linked_service_accountKey": {
+			"value": ""
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://demokeyvaultforgit.vault.azure.net/"
+		},
+		"adls_gen2_linked_service_properties_typeProperties_url": {
+			"value": "https://demostorageforgit.dfs.core.windows.net/"
+		},
 		"containerUri": {
 			"value": ""
 		},

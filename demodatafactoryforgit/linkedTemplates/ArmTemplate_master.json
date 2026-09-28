@@ -7,6 +7,18 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "demodatafactoryforgit"
 		},
+		"adls_gen2_linked_service_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'adls_gen2_linked_service'"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://demokeyvaultforgit.vault.azure.net/"
+		},
+		"adls_gen2_linked_service_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://demostorageforgit.dfs.core.windows.net/"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -33,6 +45,15 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"adls_gen2_linked_service_accountKey": {
+						"value": "[parameters('adls_gen2_linked_service_accountKey')]"
+					},
+					"AzureKeyVault1_properties_typeProperties_baseUrl": {
+						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
+					},
+					"adls_gen2_linked_service_properties_typeProperties_url": {
+						"value": "[parameters('adls_gen2_linked_service_properties_typeProperties_url')]"
 					}
 				}
 			},
