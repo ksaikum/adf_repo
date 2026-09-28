@@ -77,7 +77,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"expression": {
-								"value": "@activity('check_file_exists').output.exists",
+								"value": "@equals(activity('check_file_exists').output.exists, true)",
 								"type": "Expression"
 							}
 						}
